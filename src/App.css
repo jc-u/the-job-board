@@ -1,0 +1,109 @@
+header {
+	height: 100px;
+	background-color: #333333;
+	margin-bottom: 40px;
+}
+
+h1 {
+	color: white;
+	font-weight: bold;
+	font-size: 40px;
+	text-align: center;
+	line-height: 100px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.item {
+	width: 300px;
+	height: 300px;
+	margin: 20px auto;
+	padding: 10px;
+	position: relative;
+}
+
+.red {
+	border: solid 10px #e30413;
+}
+
+.green {
+	border: solid 10px #3ea535;
+}
+
+.yellow {
+	border: solid 10px #ffee00;
+}
+
+.blue {
+	border: solid 10px #039fe3;
+}
+
+.pink {
+	border: solid 10px #f8c5af;
+}
+
+.contract-details {
+	display: flex;
+	position: absolute;
+	bottom: 20px;
+}
+
+.contract-details p span {
+	margin: 0 5px;
+}
+
+footer {
+	padding: 30px 0;
+	background-color: #dddddd;
+	margin-top: 40px;
+}
+
+footer p {
+	text-align: center;
+	display: block;
+}
+
+footer p a {
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+footer p span {
+	margin: 0 5px;
+}
+
+@media (min-width: 768px) {
+	.container {
+		width: 750px;
+		margin: 0 auto;
+	}
+
+	.item:last-child {
+		margin: 20px; /* Pour supprimer la marge horizontale et centrer verticalement uniquement le dernier élément */
+		align-self: flex-start; /* Pour que le dernier élément ne soit pas centré verticalement */
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		width: 1020px;
+		margin: 0 auto;
+	}
+
+	.item {
+		margin: 20px -10px;
+	}
+
+	.item:last-child {
+		margin: 20px -10px;
+	}
+}
